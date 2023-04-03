@@ -1,0 +1,249 @@
+html, body{
+    height: 100%;
+    margin: 0px;
+    backdrop-filter: blur(8px);
+}
+.main{
+position: relative;
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+.navbar{
+    position: relative;
+}
+header {
+  background-color: rgba(255, 255, 255, 0); /* Set the header to be transparent with an opacity of 50% */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1; /* Set the z-index to be higher than the background image */
+}
+.logo{
+    position: relative;
+    left: 100px;
+    width: 120px;
+    height: 120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./image/unilibwhite.png");
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+nav li:first-child {
+  margin-left: 0;
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+/* identical to box height */
+
+    text-align: center;
+
+    color: #FFFFFF;
+    top: calc(50% - 20px);
+    text-decoration: none;
+}
+
+.TrangChu{
+    position: absolute;
+    left: calc(50% - 200px);
+}
+.TaiLieu{
+position: absolute;
+    left: calc(60% - 10px);
+}
+
+.TraCuu{
+position: absolute;
+    left: calc(80%);
+}
+.background-image {
+  background: linear-gradient(360deg, rgba(255, 255, 255, 0.5) -7.87%, rgba(238, 218, 218, 0) 50%), linear-gradient(180deg, rgba(0, 0, 0, 0.5) -4.91%, rgba(0, 0, 0, 0) 45.65%), url("./image/abstract-blur-defocused-bookshelf-library.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  filter: blur(5px); /* Apply a blur filter to the background image */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+#Login-area{
+    position: absolute;
+    top: calc(50% - 400px/2);
+	left: calc(50% - 500px/2);
+    width: 500px;
+    height: 400px;
+    background: #F1F1F1;
+    border-radius: 50px;
+}
+#Login-label{
+    position: absolute;
+    left: calc(50% - 500px/2);
+    top: calc(50% - 400px/2);
+    width: 500px;
+    height: 90px;
+    background: #75B7E5;
+    border-radius: 50px 50px 0px 0px;
+}
+
+#Login{
+    border: 0px;
+    padding: 0px;
+    position: absolute;
+    width: 500px;
+    height: 90px;
+    left: calc(50% - 150px/2);
+    top: calc(50% - 90px/2);
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 120%;
+    /* identical to box height, or 54px */
+
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
+
+.Input1{
+    height: 60px;
+    width: 400px;
+    position: absolute;
+    left: calc(50% - 400px/2);
+    top: calc(50% - 200px/2);
+
+    display:flex;
+}
+
+.Input_Logo{
+    height: 60px;
+    width: 60px;
+    background-color: #3696DA;
+    border-radius: 30px 0px 0px 30px;
+}
+
+img{
+    position: absolute;
+    left: 19px;
+    top: 13px;
+    align-self: center;
+    width: 30px;
+    height: 30px;
+}
+
+.Input-Text{
+    height: 60px;
+    width: 340px;
+}
+
+.Input-Text > input{
+    position: absolute;
+    width: 340px;
+    height: 56px;
+
+    background: #FFFFFF;
+    border-color: #FFFFFF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0px 30px 30px 0px;
+    font-size: 30px;
+}
+
+.Input2{
+    height: 60px;
+    width: 400px;
+    position: absolute;
+    left: calc(50% - 400px/2);
+    top: calc(50% - 10px);
+    display:flex;
+}
+
+#Password{
+    position: absolute;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    width: 167px;
+    height: 27px;
+    left: calc(50% - 167px/2 - 2.5px);
+    top: calc(50% + 60px);
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 27px;
+    /* identical to box height */
+    text-align: center;
+    text-decoration-line: underline;
+    /* ForegroundColor1 */
+    color: #1C509D;
+}
+
+.ButtonArea{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: calc(50% - 160px);
+    display: flex;
+}
+
+.Button{
+    border: 10px;
+    width: 100px;
+    height: 100%;
+    border-radius: 30px;
+}
+
+.Login{
+    position: absolute;
+    margin-left:-5px;
+    left: calc(50% - 100px);
+    background-color: #3696DA;
+    
+color: #FFFFFF;
+}
+
+.Signup{
+    position: absolute;
+    margin-right: -5px;
+    right: calc(50% - 100px);
+    background: #FCFEFF;
+    border: 2px solid #3696DA;
+    color: #2677B0;
+;
+    border-radius: 30px;
+}
+.Button-hover :hover{
+    box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}
+
+
+
+
